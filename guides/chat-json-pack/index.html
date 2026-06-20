@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Пак через обычный чат — Soteken</title>
+  <meta name="description" content="Как сделать основу квиз-пака через ChatGPT, Claude, DeepSeek или другой чат.">
+  <link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="../../"><span class="brand-mark">S</span><span>Soteken</span></a>
+    <nav class="top-nav" aria-label="Основная навигация">
+      <a href="../../projects/">Проекты</a>
+      <a href="../../guides/">Гайды</a>
+      <a href="../../tools/">Инструменты</a>
+      <a href="../../games/">Игры</a>
+      <a href="../../notes/">Заметки</a>
+    </nav>
+  </header>
+
+  <main>
+    <article class="article">
+      <p class="breadcrumb"><a href="../../">Главная</a> / <a href="../">Гайды</a> / Пак через чат</p>
+      <p class="eyebrow">JSON от чата</p>
+      <h1>Как сделать пак через обычный чат</h1>
+      <p class="article-lead">Этот способ нужен, если у вас нет Codex или MCP. Достаточно обычного ChatGPT, Claude, DeepSeek или другого чата.</p>
+
+      <ol class="article-steps">
+        <li>
+          <h2>Откройте чат</h2>
+          <p>Подойдёт любой чат, который умеет писать длинный текст и создавать JSON: ChatGPT, Claude, DeepSeek и похожие сервисы.</p>
+        </li>
+        <li>
+          <h2>Отправьте инструкцию</h2>
+          <p>Скопируйте этот текст и отправьте его в чат перед своим запросом:</p>
+          <pre><code>Ты должен подготовить JSON-файл для импорта в SotekenGamePack.
+Сначала уточни у меня:
+1. Сколько раундов нужно?
+2. Сколько тем в каждом раунде?
+3. Сколько вопросов в каждой теме?
+4. Какая стоимость вопросов?
+5. Для какой аудитории делаем пак?
+6. Какие темы точно нужны и какие темы нельзя использовать?
+
+После уточнений верни готовый файл soteken_pack.json.
+Не пиши объяснения вместо файла. Нужен именно JSON для импорта.
+
+Структура:
+{
+  "name": "Название пака",
+  "author": "Автор",
+  "rounds": [
+    {
+      "name": "Раунд 1",
+      "themes": [
+        {
+          "name": "Тема",
+          "questions": [
+            {"price": 100, "text": "Вопрос", "answer": "Ответ"}
+          ]
+        }
+      ]
+    }
+  ]
+}</code></pre>
+        </li>
+        <li>
+          <h2>Попросите нужный пак</h2>
+          <p>Например:</p>
+          <pre><code>Сделай пак на 3 раунда, по 5 тем, по 7 вопросов.
+Пак для друзей 20 лет. Темы: мемы, игры, кино, музыка, YouTube.</code></pre>
+        </li>
+        <li>
+          <h2>Скачайте или скопируйте JSON</h2>
+          <p>Идеально, если чат вернёт файл `soteken_pack.json`. Если файла нет, можно скопировать JSON-код вручную в текстовый файл.</p>
+        </li>
+        <li>
+          <h2>Импортируйте в редактор</h2>
+          <p>Откройте SotekenGamePack и нажмите `JSON от чата`. После импорта останется добавить картинки, аудио и видео.</p>
+        </li>
+      </ol>
+
+      <section class="notice soft">
+        <h2>Зачем это нужно</h2>
+        <p>Чат создаёт структуру: раунды, темы, вопросы и ответы. Редактор нужен для медиа, проверки и экспорта готового `.siq`.</p>
+      </section>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <span>Soteken</span>
+    <a href="../">Все гайды</a>
+  </footer>
+</body>
+</html>

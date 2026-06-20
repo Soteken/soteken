@@ -3,26 +3,27 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Soteken — проекты, игры и заметки</title>
-  <meta name="description" content="Soteken — личный хаб проектов, игр, гайдов, инструментов и заметок о разработке.">
+  <title>Soteken — проекты, игры и гайды</title>
+  <meta name="description" content="Soteken — сайт с проектами, играми, гайдами, инструментами и заметками о разработке.">
   <meta property="og:title" content="Soteken">
-  <meta property="og:description" content="Игры, инструменты, гайды и заметки о разработке.">
+  <meta property="og:description" content="Проекты, игры, гайды и полезные инструменты.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="assets/soteken-game-pack.png">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="site-header" id="top">
-    <a class="brand" href="#top" aria-label="Soteken home">
+  <header class="site-header">
+    <a class="brand" href="./" aria-label="Soteken home">
       <span class="brand-mark">S</span>
       <span>Soteken</span>
     </a>
     <nav class="top-nav" aria-label="Основная навигация">
-      <a href="#projects">Проекты</a>
-      <a href="#guides">Гайды</a>
-      <a href="#tools">Инструменты</a>
-      <a href="#notes">Заметки</a>
+      <a href="projects/">Проекты</a>
+      <a href="guides/">Гайды</a>
+      <a href="tools/">Инструменты</a>
+      <a href="games/">Игры</a>
+      <a href="notes/">Заметки</a>
     </nav>
   </header>
 
@@ -33,11 +34,11 @@
         <p class="eyebrow">Игры, инструменты и разработка</p>
         <h1 id="hero-title">Soteken</h1>
         <p class="hero-lead">
-          Личный хаб для проектов, игровых экспериментов, полезных ссылок, гайдов и заметок о том, как всё это собирается.
+          Сайт для моих проектов, гайдов, полезных ссылок и заметок. Без необходимости разбираться в GitHub, если вы просто хотите пользоваться инструментами.
         </p>
         <div class="hero-actions" aria-label="Быстрые действия">
-          <a class="button primary" href="#projects">Смотреть проекты</a>
-          <a class="button secondary" href="https://github.com/Soteken">GitHub</a>
+          <a class="button primary" href="projects/soteken-game-pack/">SotekenGamePack</a>
+          <a class="button secondary" href="guides/">Открыть гайды</a>
         </div>
       </div>
     </section>
@@ -46,137 +47,83 @@
       <div class="section-inner intro-grid">
         <div>
           <p class="section-kicker">Зачем этот сайт</p>
-          <h2>Одна точка входа для всего, что я делаю</h2>
+          <h2>Не репозиторий, а вход для обычного пользователя</h2>
         </div>
         <p>
-          Здесь будут собраны приложения, игры, документация, обучающие материалы, заметки по разработке и ссылки на инструменты, которые пригодились на практике.
+          Здесь будут страницы проектов, инструкции, скачивания, обучение и полезные ссылки. GitHub останется для исходников и разработчиков, а основные объяснения будут жить на сайте.
         </p>
       </div>
     </section>
 
-    <section class="section-inner" id="projects">
+    <section class="section-inner">
       <div class="section-heading">
-        <p class="section-kicker">Projects</p>
-        <h2>Проекты</h2>
-        <p>Готовые и развивающиеся инструменты, которые можно скачать, изучить или использовать как основу для новых идей.</p>
+        <p class="section-kicker">Главные разделы</p>
+        <h2>Куда перейти</h2>
+      </div>
+      <div class="direction-grid">
+        <a class="direction-card" href="projects/">
+          <span class="card-tag">01</span>
+          <h3>Проекты</h3>
+          <p>Приложения, редакторы, сервисы и эксперименты, которые можно скачать или изучить.</p>
+        </a>
+        <a class="direction-card" href="guides/">
+          <span class="card-tag">02</span>
+          <h3>Гайды</h3>
+          <p>Пошаговые инструкции простым языком: что скачать, куда нажать и как получить результат.</p>
+        </a>
+        <a class="direction-card" href="tools/">
+          <span class="card-tag">03</span>
+          <h3>Инструменты</h3>
+          <p>Полезные сервисы, ссылки и утилиты, которые пригодились в работе.</p>
+        </a>
+        <a class="direction-card" href="games/">
+          <span class="card-tag">04</span>
+          <h3>Игры</h3>
+          <p>Игровые прототипы, сборки, дневники разработки и планы.</p>
+        </a>
+      </div>
+    </section>
+
+    <section class="section-inner" aria-labelledby="featured-title">
+      <div class="section-heading">
+        <p class="section-kicker">Featured</p>
+        <h2 id="featured-title">Первый проект</h2>
       </div>
 
       <article class="featured-project">
         <div class="project-copy">
-          <span class="status-pill">Первый публичный проект</span>
+          <span class="status-pill">Редактор квиз-паков</span>
           <h3>SotekenGamePack</h3>
           <p>
-            Локальный редактор квиз-паков: раунды, темы, вопросы, медиа, импорт JSON от обычного чата и экспорт в `.siq`.
+            Локальный редактор для паков с раундами, темами, вопросами, картинками, аудио, видео и экспортом в `.siq`.
           </p>
           <div class="feature-list" aria-label="Возможности SotekenGamePack">
-            <span>Квиз-паки</span>
+            <span>Для мем-паков</span>
             <span>Медиа</span>
             <span>JSON от чата</span>
-            <span>Windows-сборки</span>
+            <span>Windows</span>
           </div>
           <div class="inline-actions">
-            <a class="button primary" href="https://github.com/Soteken/SotekenGamePack">Открыть GitHub</a>
-            <a class="button ghost" href="https://github.com/Soteken/SotekenGamePack/releases">Релизы</a>
+            <a class="button primary" href="projects/soteken-game-pack/">Страница проекта</a>
+            <a class="button ghost" href="guides/soteken-game-pack-start/">Как скачать</a>
           </div>
         </div>
-        <a class="project-preview" href="https://github.com/Soteken/SotekenGamePack" aria-label="Открыть SotekenGamePack на GitHub">
+        <a class="project-preview" href="projects/soteken-game-pack/" aria-label="Открыть страницу SotekenGamePack">
           <img src="assets/soteken-game-pack.png" alt="Стартовый экран SotekenGamePack">
         </a>
       </article>
     </section>
 
     <section class="band">
-      <div class="section-inner direction-grid">
-        <a class="direction-card" href="#projects">
-          <span class="card-tag">01</span>
-          <h3>Приложения</h3>
-          <p>Редакторы, автоматизация, рабочие инструменты и сервисы вокруг создания контента.</p>
-        </a>
-        <a class="direction-card" href="#games">
-          <span class="card-tag">02</span>
-          <h3>Игры</h3>
-          <p>Прототипы, игровые механики, сборки, дневники разработки и эксперименты.</p>
-        </a>
-        <a class="direction-card" href="#guides">
-          <span class="card-tag">03</span>
-          <h3>Гайды</h3>
-          <p>Пошаговые инструкции для пользователей и заметки, которые экономят время.</p>
-        </a>
-        <a class="direction-card" href="#tools">
-          <span class="card-tag">04</span>
-          <h3>Инструменты</h3>
-          <p>Полезные ссылки, сервисы, библиотеки и утилиты, проверенные в работе.</p>
-        </a>
-      </div>
-    </section>
-
-    <section class="section-inner split-section" id="games">
-      <div class="section-heading compact">
-        <p class="section-kicker">Games</p>
-        <h2>Игровые проекты</h2>
-      </div>
-      <div class="text-panel">
-        <p>
-          Этот раздел будет для прототипов, Godot-проектов, сборок, скриншотов, заметок по механикам и планов по играм.
-        </p>
-        <p class="muted">
-          Пока раздел готовится, но структура сайта уже оставляет ему отдельное место.
-        </p>
-      </div>
-    </section>
-
-    <section class="section-inner content-columns" id="guides">
-      <div class="section-heading">
-        <p class="section-kicker">Guides</p>
-        <h2>Гайды и обучение</h2>
-        <p>Короткие практические материалы, которые можно отправить другу или открыть самому через месяц.</p>
-      </div>
-      <div class="list-column">
-        <a class="resource-row" href="https://github.com/Soteken/SotekenGamePack/blob/main/docs/chat_json_pack_prompt.md">
-          <span>Гайд</span>
-          <strong>Пак через обычный чат</strong>
-          <small>Инструкция для ChatGPT, Claude, DeepSeek и других чатов.</small>
-        </a>
-        <a class="resource-row" href="https://github.com/Soteken/SotekenGamePack#быстрый-старт">
-          <span>Старт</span>
-          <strong>Как запустить SotekenGamePack</strong>
-          <small>Готовые сборки, исходники и первые действия.</small>
-        </a>
-      </div>
-    </section>
-
-    <section class="section-inner content-columns" id="tools">
-      <div class="section-heading">
-        <p class="section-kicker">Tools</p>
-        <h2>Полезные ссылки</h2>
-        <p>Место для сервисов, библиотек, API и утилит, которые помогают делать проекты быстрее.</p>
-      </div>
-      <div class="tool-grid">
-        <a href="https://github.com/" class="tool-card">
-          <strong>GitHub</strong>
-          <span>Код, релизы, Issues и страницы проектов.</span>
-        </a>
-        <a href="https://pages.github.com/" class="tool-card">
-          <strong>GitHub Pages</strong>
-          <span>Статический сайт для бренда, гайдов и документации.</span>
-        </a>
-        <a href="https://developers.openai.com/" class="tool-card">
-          <strong>OpenAI API</strong>
-          <span>ИИ-функции для будущих сервисов и автоматизации.</span>
-        </a>
-      </div>
-    </section>
-
-    <section class="band" id="notes">
       <div class="section-inner roadmap">
         <div>
           <p class="section-kicker">Roadmap</p>
           <h2>Что дальше</h2>
         </div>
         <ol class="roadmap-list">
-          <li><span>01</span> Оформить сайт как публичный хаб Soteken.</li>
-          <li><span>02</span> Добавить страницы проектов и первые гайды.</li>
-          <li><span>03</span> Подключить домен `soteken.com`, когда он будет куплен.</li>
+          <li><span>01</span> Наполнить страницы проектов и гайдов.</li>
+          <li><span>02</span> Добавить понятную страницу скачивания для каждого приложения.</li>
+          <li><span>03</span> Подключить `soteken.com`, когда домен будет куплен.</li>
           <li><span>04</span> Позже вынести AI-сервисы на отдельный backend.</li>
         </ol>
       </div>
@@ -185,7 +132,7 @@
 
   <footer class="site-footer">
     <span>Soteken</span>
-    <a href="https://github.com/Soteken">GitHub</a>
+    <a href="https://github.com/Soteken">GitHub для разработчиков</a>
   </footer>
 </body>
 </html>

@@ -1,6 +1,16 @@
-# Soteken
+# Soteken site
 
-Personal brand hub for Soteken projects, games, guides, tools, and developer notes.
+Static multi-page website for Soteken projects, games, guides, tools, and developer notes.
 
-The site is a static GitHub Pages website. It can be published from this repository and later connected to `soteken.com`.
+Current sections:
 
+- `/projects/`
+- `/projects/soteken-game-pack/`
+- `/guides/`
+- `/guides/soteken-game-pack-start/`
+- `/guides/chat-json-pack/`
+- `/tools/`
+- `/games/`
+- `/notes/`
+
+The site can be published with GitHub Pages and later connected to `soteken.com`.
