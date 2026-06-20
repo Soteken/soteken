@@ -6,9 +6,9 @@ Current sections:
 
 - `/projects/`
 - `/projects/soteken-game-pack/`
+- `/projects/soteken-game-pack/how-to-use/`
+- `/projects/soteken-game-pack/chat-json/`
 - `/guides/`
-- `/guides/soteken-game-pack-start/`
-- `/guides/chat-json-pack/`
 - `/tools/`
 - `/games/`
 - `/notes/`

@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Пак через чат - SotekenGamePack</title>
+  <meta name="description" content="Как подготовить JSON-файл для SotekenGamePack через ChatGPT, Claude, DeepSeek или другой чат.">
+  <link rel="icon" href="../../../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../../styles.css?v=20260621-2">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="../../../"><span class="brand-mark">S</span><span>Soteken</span></a>
+    <div class="header-actions">
+      <nav class="top-nav" aria-label="Основная навигация">
+        <a href="../../../projects/">Проекты</a>
+        <a href="../../../guides/">Гайды</a>
+        <a href="../../../tools/">Инструменты</a>
+        <a href="../../../games/">Игры</a>
+        <a href="../../../notes/">Заметки</a>
+      </nav>
+      <div class="social-links" aria-label="Медиа Soteken">
+        <a class="social-link" href="https://t.me/Soteken" target="_blank" rel="noopener noreferrer" aria-label="Telegram" title="Telegram">TG</a>
+        <a class="social-link" href="https://www.youtube.com/@Soteken" target="_blank" rel="noopener noreferrer" aria-label="YouTube" title="YouTube">YT</a>
+        <a class="social-link" href="https://github.com/Soteken" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub">GH</a>
+      </div>
+    </div>
+  </header>
+
+  <nav class="project-nav" aria-label="Навигация проекта">
+    <a href="../../../">Главная</a>
+    <a href="../features/">Features</a>
+    <a href="../how-to-use/">Как пользоваться</a>
+    <a href="../roadmap/">Roadmap</a>
+    <a href="../help/">Помощь</a>
+    <a class="project-nav-cta" href="../download/">Скачать</a>
+  </nav>
+
+  <main>
+    <article class="article">
+      <p class="breadcrumb"><a href="../../../">Главная</a> / <a href="../">SotekenGamePack</a> / Пак через чат</p>
+      <p class="eyebrow">JSON от чата</p>
+      <h1>Как сделать пак через обычный чат</h1>
+      <p class="article-lead">Этот способ нужен, если нет Codex или MCP. Чат делает основу пака, а редактор потом помогает добавить медиа, проверить вопросы и экспортировать <code>.siq</code>.</p>
+
+      <ol class="article-steps">
+        <li>
+          <h2>1. Откройте любой чат</h2>
+          <p>Подойдет ChatGPT, Claude, DeepSeek или другой сервис, который умеет писать длинный текст и создавать файлы. В идеале чат должен вернуть файл <code>soteken_pack.json</code>.</p>
+        </li>
+        <li>
+          <h2>2. Отправьте системную инструкцию</h2>
+          <p>Скопируйте этот prompt и отправьте его в чат перед своим запросом:</p>
+          <pre><code>Ты готовишь JSON-файл для импорта в SotekenGamePack.
+
+Сначала уточни у пользователя:
+1. Сколько раундов нужно?
+2. Сколько тем в каждом раунде?
+3. Сколько вопросов в каждой теме?
+4. Какая стоимость вопросов в каждом раунде?
+5. Для какой аудитории делаем пак?
+6. Какие темы точно нужны?
+7. Какие темы, шутки и форматы нельзя использовать?
+
+После уточнений верни именно файл soteken_pack.json.
+Не заменяй файл обычным объяснением.
+Если сервис не умеет прикреплять файл, верни только JSON-код в отдельном блоке.
+
+Структура JSON:
+{
+  "name": "Название пака",
+  "author": "Автор",
+  "rounds": [
+    {
+      "name": "Раунд 1",
+      "themes": [
+        {
+          "name": "Тема",
+          "questions": [
+            {
+              "price": 100,
+              "text": "Вопрос",
+              "answer": "Ответ"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}</code></pre>
+        </li>
+        <li>
+          <h2>3. Попросите нужный пак</h2>
+          <p>Пример запроса:</p>
+          <pre><code>Сделай пак на 3 раунда, по 5 тем, по 7 вопросов.
+Пак для друзей 20 лет. Темы: мемы, игры, кино, музыка, YouTube.
+Не добавляй политику, жесткие 18+ темы и слишком локальные шутки.</code></pre>
+        </li>
+        <li>
+          <h2>4. Скачайте файл или скопируйте JSON</h2>
+          <p>ChatGPT и Claude часто могут создать файл. DeepSeek может показать JSON в отдельном окне с кнопкой скачивания. Если файла нет, скопируйте JSON-код и сохраните его как <code>soteken_pack.json</code>.</p>
+        </li>
+        <li>
+          <h2>5. Импортируйте JSON в редактор</h2>
+          <p>Откройте SotekenGamePack, выберите импорт JSON от чата и загрузите файл. После импорта проверьте вопросы и добавьте картинки, аудио или видео.</p>
+        </li>
+      </ol>
+
+      <section class="notice soft">
+        <h2>Что важно проверить</h2>
+        <p>Чат может повторять ответы, ошибаться в фактах или делать слишком длинные формулировки. Перед экспортом пройдитесь по всем вопросам и поправьте слабые места вручную.</p>
+      </section>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <span>SotekenGamePack</span>
+    <div class="footer-links">
+      <a href="../how-to-use/">Как пользоваться</a>
+      <a href="../features/">Features</a>
+      <a href="../help/">Помощь</a>
+    </div>
+  </footer>
+</body>
+</html>

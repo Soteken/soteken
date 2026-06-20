@@ -511,6 +511,11 @@ h3 {
   border-bottom: 1px solid var(--line);
   background: rgba(13, 17, 22, .88);
   backdrop-filter: blur(18px);
+  scrollbar-width: none;
+}
+
+.project-nav::-webkit-scrollbar {
+  display: none;
 }
 
 .project-nav a {
@@ -1216,9 +1221,14 @@ pre {
   }
 
   .hero h1,
-  .product-hero h1,
-  .article h1 {
+  .product-hero h1 {
     font-size: 56px;
+  }
+
+  .article h1 {
+    font-size: 40px;
+    line-height: 1.04;
+    overflow-wrap: normal;
   }
 
   h2 {

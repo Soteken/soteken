@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Как пользоваться - SotekenGamePack</title>
+  <meta name="description" content="Пошаговая инструкция по работе с SotekenGamePack: запуск, создание пака, медиа, черновик и экспорт.">
+  <link rel="icon" href="../../../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../../styles.css?v=20260621-2">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="../../../"><span class="brand-mark">S</span><span>Soteken</span></a>
+    <div class="header-actions">
+      <nav class="top-nav" aria-label="Основная навигация">
+        <a href="../../../projects/">Проекты</a>
+        <a href="../../../guides/">Гайды</a>
+        <a href="../../../tools/">Инструменты</a>
+        <a href="../../../games/">Игры</a>
+        <a href="../../../notes/">Заметки</a>
+      </nav>
+      <div class="social-links" aria-label="Медиа Soteken">
+        <a class="social-link" href="https://t.me/Soteken" target="_blank" rel="noopener noreferrer" aria-label="Telegram" title="Telegram">TG</a>
+        <a class="social-link" href="https://www.youtube.com/@Soteken" target="_blank" rel="noopener noreferrer" aria-label="YouTube" title="YouTube">YT</a>
+        <a class="social-link" href="https://github.com/Soteken" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub">GH</a>
+      </div>
+    </div>
+  </header>
+
+  <nav class="project-nav" aria-label="Навигация проекта">
+    <a href="../../../">Главная</a>
+    <a href="../features/">Features</a>
+    <a href="../how-to-use/">Как пользоваться</a>
+    <a href="../roadmap/">Roadmap</a>
+    <a href="../help/">Помощь</a>
+    <a class="project-nav-cta" href="../download/">Скачать</a>
+  </nav>
+
+  <main>
+    <article class="article">
+      <p class="breadcrumb"><a href="../../../">Главная</a> / <a href="../">SotekenGamePack</a> / Как пользоваться</p>
+      <p class="eyebrow">Start guide</p>
+      <h1>Как пользоваться редактором</h1>
+      <p class="article-lead">Базовый сценарий для обычного пользователя: открыть редактор, собрать структуру пака, добавить медиа и получить готовый <code>.siq</code>.</p>
+
+      <section class="notice soft">
+        <h2>Быстрый выбор старта</h2>
+        <div class="panel-grid">
+          <a class="info-card" href="#new-pack">
+            <h3>С нуля</h3>
+            <p>Подходит, если вы сами придумываете темы и вопросы прямо в редакторе.</p>
+          </a>
+          <a class="info-card" href="../chat-json/">
+            <h3>Через чат</h3>
+            <p>ChatGPT, Claude или DeepSeek делают JSON-основу, а вы добавляете медиа.</p>
+          </a>
+          <a class="info-card" href="#load-pack">
+            <h3>Из готового <code>.siq</code></h3>
+            <p>Подходит, если нужно поправить существующий пак или собрать новый на его основе.</p>
+          </a>
+        </div>
+      </section>
+
+      <ol class="article-steps">
+        <li id="launch">
+          <h2>1. Запустите редактор</h2>
+          <p>Скачайте готовую сборку со страницы проекта, распакуйте архив и откройте <code>SotekenGamePack.exe</code>. После запуска редактор сам откроется в браузере.</p>
+          <p><a class="button secondary" href="../download/">Как скачать редактор</a></p>
+        </li>
+        <li id="new-pack">
+          <h2>2. Выберите, с чего начать</h2>
+          <p>На стартовом экране можно создать новый пак, загрузить готовый <code>.siq</code> или импортировать JSON от чата. Для первой пробы проще начать с нового пака или JSON.</p>
+        </li>
+        <li id="structure">
+          <h2>3. Настройте структуру</h2>
+          <p>Укажите название пака, раунды, темы и стоимость вопросов. Хороший базовый формат для игры с друзьями: 2-3 раунда, 4-6 тем в раунде, 5-7 вопросов в теме.</p>
+        </li>
+        <li id="questions">
+          <h2>4. Заполните вопросы и ответы</h2>
+          <p>Для каждого вопроса проверьте цену, текст, ответ и тип вопроса. Если вопрос задается картинкой, аудио или видео, текст можно оставить коротким или пустым.</p>
+        </li>
+        <li id="media">
+          <h2>5. Добавьте медиа</h2>
+          <p>К вопросам и ответам можно прикреплять изображения, аудио и видео. После добавления проверьте, что медиа открывается, не перепутано с другим вопросом и нормально выглядит в паке.</p>
+        </li>
+        <li id="check">
+          <h2>6. Проверьте размер и порядок</h2>
+          <p>Сожмите тяжелые картинки, проверьте неоднозначные по размеру видео через Видео Уравнитель и пройдитесь по структуре пака сверху вниз. Лучше поймать ошибки до экспорта.</p>
+        </li>
+        <li id="draft">
+          <h2>7. Сохраните черновик</h2>
+          <p>Если работа еще не закончена, используйте сохранение черновика. Это полезно для паков с медиа: можно вернуться к проекту позже и не собирать все заново.</p>
+        </li>
+        <li id="export">
+          <h2>8. Экспортируйте готовый файл</h2>
+          <p>Когда все вопросы готовы, экспортируйте пак в <code>.siq</code>. После этого откройте файл в совместимом приложении и быстро проверьте несколько вопросов из разных раундов.</p>
+        </li>
+      </ol>
+
+      <section class="notice soft" id="load-pack">
+        <h2>Если загружаете существующий пак</h2>
+        <p>Сначала сохраните копию исходного <code>.siq</code>. Затем импортируйте пак в редактор, внесите изменения и экспортируйте новый файл с другим названием.</p>
+      </section>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <span>SotekenGamePack</span>
+    <div class="footer-links">
+      <a href="../features/">Features</a>
+      <a href="../chat-json/">Пак через чат</a>
+      <a href="../help/">Помощь</a>
+    </div>
+  </footer>
+</body>
+</html>
