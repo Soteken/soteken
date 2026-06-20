@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>SotekenGamePack — Soteken</title>
-  <meta name="description" content="SotekenGamePack — локальный редактор квиз-паков с медиа и экспортом в .siq.">
+  <title>SotekenGamePack — редактор квиз-паков</title>
+  <meta name="description" content="SotekenGamePack — локальный редактор квиз-паков с AI, медиа, JSON от чата и экспортом в .siq.">
   <link rel="icon" href="../../favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../../styles.css">
 </head>
@@ -27,81 +27,105 @@
     </div>
   </header>
 
+  <nav class="project-nav" aria-label="Навигация проекта">
+    <a href="../../">Главная</a>
+    <a href="features/">Features</a>
+    <a href="roadmap/">Roadmap</a>
+    <a href="help/">Помощь</a>
+    <a class="project-nav-cta" href="download/">Скачать</a>
+  </nav>
+
   <main>
-    <section class="page-hero product-hero">
-      <div class="section-inner product-hero-grid">
-        <div>
+    <section class="product-landing">
+      <div class="product-landing-bg" aria-hidden="true"></div>
+      <div class="section-inner product-landing-grid">
+        <div class="product-landing-copy">
           <p class="breadcrumb"><a href="../../">Главная</a> / <a href="../">Проекты</a> / SotekenGamePack</p>
           <p class="eyebrow">Редактор квиз-паков</p>
           <h1>Soteken<br>GamePack</h1>
-          <p class="hero-lead">Собирайте паки для игр с друзьями: темы, вопросы, мемы, картинки, аудио, видео и экспорт в `.siq`.</p>
+          <p class="hero-lead">
+            Собирайте мем-паки и игры для друзей: темы, вопросы, картинки, аудио, видео, JSON от чата и экспорт в `.siq`.
+          </p>
           <div class="hero-actions">
-            <a class="button primary" href="../../guides/soteken-game-pack-start/">Как скачать и запустить</a>
-            <a class="button secondary" href="../../guides/chat-json-pack/">Сделать пак через чат</a>
+            <a class="button primary" href="download/">Скачать редактор</a>
+            <a class="button secondary" href="features/">Посмотреть возможности</a>
           </div>
         </div>
-        <img class="product-shot" src="../../assets/soteken-game-pack.png" alt="Стартовый экран SotekenGamePack">
+        <div class="product-showcase">
+          <img src="../../assets/soteken-game-pack.png" alt="Стартовый экран SotekenGamePack">
+        </div>
       </div>
     </section>
 
-    <section class="section-inner feature-grid">
-      <article class="info-card">
-        <h2>Для обычных пользователей</h2>
-        <p>Не нужно понимать GitHub, XML или структуру `.siq`. Основные действия происходят в браузере через кнопки редактора.</p>
-      </article>
-      <article class="info-card">
-        <h2>Для мем-паков</h2>
-        <p>Можно быстро собрать темы по фильмам, играм, мемам, музыке, друзьям, стримерам или локальным шуткам.</p>
-      </article>
-      <article class="info-card">
-        <h2>С медиа</h2>
-        <p>Редактор работает с картинками, аудио и видео, помогает сжимать файлы и проверять проблемные места.</p>
-      </article>
+    <section class="section-inner product-strip">
+      <a href="features/#ai" class="mini-feature">
+        <span>AI</span>
+        <strong>Пак через чат</strong>
+        <p>ChatGPT, Claude или DeepSeek готовят основу JSON-пака.</p>
+      </a>
+      <a href="features/#images" class="mini-feature">
+        <span>Images</span>
+        <strong>Картинки</strong>
+        <p>Поиск, загрузка, фоторедактор и сжатие под лимиты.</p>
+      </a>
+      <a href="features/#audio" class="mini-feature">
+        <span>Audio</span>
+        <strong>Музыка и звуки</strong>
+        <p>Аудио-вопросы, превью, загрузка и обрезка.</p>
+      </a>
+      <a href="features/#video" class="mini-feature">
+        <span>Video</span>
+        <strong>Видео</strong>
+        <p>Трейлеры, фрагменты и Видео Уравнитель.</p>
+      </a>
     </section>
 
     <section class="band">
-      <div class="section-inner content-columns">
+      <div class="section-inner product-workflow">
         <div class="section-heading compact">
-          <p class="section-kicker">Что делать</p>
-          <h2>Быстрый путь</h2>
+          <p class="section-kicker">Workflow</p>
+          <h2>От идеи до готового пака</h2>
+          <p>Сайт проекта объясняет продукт как редактор, а не как репозиторий с файлами.</p>
         </div>
-        <ol class="steps">
-          <li><span>1</span><strong>Скачайте сборку</strong><p>Откройте инструкцию скачивания и возьмите готовый архив, когда релиз опубликован.</p></li>
-          <li><span>2</span><strong>Создайте пак</strong><p>Начните с пустого пака или импортируйте JSON, который сгенерировал обычный чат.</p></li>
-          <li><span>3</span><strong>Добавьте медиа</strong><p>Вставьте картинки, аудио, видео, обложку и проверьте размер файлов.</p></li>
-          <li><span>4</span><strong>Экспортируйте `.siq`</strong><p>Готовый файл можно передать друзьям или открыть в совместимом приложении.</p></li>
+        <ol class="workflow-steps">
+          <li><span>01</span><strong>Создайте основу</strong><p>С нуля, из существующего `.siq` или через JSON от обычного чата.</p></li>
+          <li><span>02</span><strong>Наполните контентом</strong><p>Темы, вопросы, ответы, мемы, изображения, аудио и видео.</p></li>
+          <li><span>03</span><strong>Проверьте медиа</strong><p>Сжатие картинок, проблемные видео, обложка, структура и ответы.</p></li>
+          <li><span>04</span><strong>Экспортируйте `.siq`</strong><p>Получите готовый файл для совместимого приложения.</p></li>
         </ol>
       </div>
     </section>
 
-    <section class="section-inner">
+    <section class="section-inner product-panels">
       <div class="section-heading">
-        <p class="section-kicker">Инструкции</p>
-        <h2>Полезные страницы</h2>
+        <p class="section-kicker">For users</p>
+        <h2>Не нужно понимать GitHub</h2>
+        <p>Основной путь пользователя должен проходить через сайт: скачать, открыть гайд, понять функции, получить помощь.</p>
       </div>
-      <div class="guide-grid">
-        <a class="resource-row" href="../../guides/soteken-game-pack-start/">
-          <span>Старт</span>
-          <strong>Как скачать и запустить</strong>
-          <small>Пояснение для человека, который не пользуется GitHub.</small>
+      <div class="panel-grid">
+        <a class="info-card" href="download/">
+          <h3>Скачать</h3>
+          <p>Отдельная страница объясняет, что такое релиз и где брать готовую сборку.</p>
         </a>
-        <a class="resource-row" href="../../guides/chat-json-pack/">
-          <span>Чат</span>
-          <strong>Как сделать пак через ChatGPT или Claude</strong>
-          <small>Получить основу пака без Codex и MCP.</small>
+        <a class="info-card" href="features/">
+          <h3>Возможности</h3>
+          <p>AI, текст, изображения, аудио, видео, экспорт и сценарии использования.</p>
+        </a>
+        <a class="info-card" href="help/">
+          <h3>Помощь</h3>
+          <p>Telegram, будущая доменная почта, FAQ и понятные пути связи.</p>
         </a>
       </div>
-    </section>
-
-    <section class="section-inner developer-note">
-      <p class="section-kicker">Для разработчиков</p>
-      <p>Исходный код проекта хранится на GitHub: <a href="https://github.com/Soteken/SotekenGamePack" target="_blank" rel="noopener noreferrer">SotekenGamePack</a>.</p>
     </section>
   </main>
 
   <footer class="site-footer">
-    <span>Soteken</span>
-    <a href="../../projects/">Все проекты</a>
+    <span>SotekenGamePack</span>
+    <div class="footer-links">
+      <a href="features/">Features</a>
+      <a href="roadmap/">Roadmap</a>
+      <a href="help/">Помощь</a>
+    </div>
   </footer>
 </body>
 </html>

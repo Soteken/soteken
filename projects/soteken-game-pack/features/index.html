@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Features — SotekenGamePack</title>
+  <meta name="description" content="Возможности SotekenGamePack: AI, текст, изображения, аудио, видео и экспорт.">
+  <link rel="icon" href="../../../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../../styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="../../../"><span class="brand-mark">S</span><span>Soteken</span></a>
+    <div class="header-actions">
+      <nav class="top-nav" aria-label="Основная навигация">
+        <a href="../../../projects/">Проекты</a>
+        <a href="../../../guides/">Гайды</a>
+        <a href="../../../tools/">Инструменты</a>
+        <a href="../../../games/">Игры</a>
+        <a href="../../../notes/">Заметки</a>
+      </nav>
+      <div class="social-links" aria-label="Медиа Soteken">
+        <a class="social-link" href="https://t.me/Soteken" target="_blank" rel="noopener noreferrer" aria-label="Telegram" title="Telegram">TG</a>
+        <a class="social-link" href="https://www.youtube.com/@Soteken" target="_blank" rel="noopener noreferrer" aria-label="YouTube" title="YouTube">YT</a>
+        <a class="social-link" href="https://github.com/Soteken" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub">GH</a>
+      </div>
+    </div>
+  </header>
+
+  <nav class="project-nav" aria-label="Навигация проекта">
+    <a href="../../../">Главная</a>
+    <a href="../features/">Features</a>
+    <a href="../roadmap/">Roadmap</a>
+    <a href="../help/">Помощь</a>
+    <a class="project-nav-cta" href="../download/">Скачать</a>
+  </nav>
+
+  <main>
+    <section class="page-hero">
+      <div class="section-inner">
+        <p class="breadcrumb"><a href="../../../">Главная</a> / <a href="../">SotekenGamePack</a> / Features</p>
+        <p class="eyebrow">Features</p>
+        <h1>Возможности редактора</h1>
+        <p class="hero-lead">SotekenGamePack устроен как рабочий редактор: от генерации основы до медиа и экспорта готового `.siq`.</p>
+      </div>
+    </section>
+
+    <section class="section-inner feature-showcase" id="ai">
+      <div class="feature-copy">
+        <p class="section-kicker">AI</p>
+        <h2>AI и JSON от чата</h2>
+        <p>Обычный ChatGPT, Claude или DeepSeek может подготовить структуру пака: раунды, темы, вопросы, цены и ответы. Редактор импортирует JSON и превращает его в рабочий пак.</p>
+        <a class="button secondary" href="../../../guides/chat-json-pack/">Как сделать пак через чат</a>
+      </div>
+      <div class="feature-media mock-panel">
+        <span>JSON от чата</span>
+        <strong>3 раунда · 5 тем · 7 вопросов</strong>
+        <p>Импортируйте файл, проверьте вопросы и добавьте медиа.</p>
+      </div>
+    </section>
+
+    <section class="section-inner feature-showcase reverse" id="text">
+      <div class="feature-copy">
+        <p class="section-kicker">Text</p>
+        <h2>Темы, вопросы и ответы</h2>
+        <p>Редактируйте структуру пака вручную: названия раундов, темы, стоимость вопросов, формулировки, ответы и варианты выбора.</p>
+      </div>
+      <div class="feature-media mock-list">
+        <div><span>100</span><strong>Лёгкий вопрос</strong></div>
+        <div><span>300</span><strong>Средняя сложность</strong></div>
+        <div><span>700</span><strong>Финальный мем</strong></div>
+      </div>
+    </section>
+
+    <section class="section-inner feature-showcase" id="images">
+      <div class="feature-copy">
+        <p class="section-kicker">Images</p>
+        <h2>Изображения и фоторедактор</h2>
+        <p>Добавляйте картинки к вопросам и ответам, правьте их во встроенном фоторедакторе и сжимайте под лимит, чтобы пак нормально открывался.</p>
+      </div>
+      <div class="feature-media image-board">
+        <img src="../../../assets/soteken-game-pack.png" alt="Экран редактора SotekenGamePack">
+      </div>
+    </section>
+
+    <section class="section-inner feature-showcase reverse" id="audio">
+      <div class="feature-copy">
+        <p class="section-kicker">Audio</p>
+        <h2>Аудио, музыка и звуки</h2>
+        <p>Собирайте аудио-вопросы, добавляйте короткие фрагменты, используйте поиск и храните медиа вместе с паком.</p>
+      </div>
+      <div class="feature-media waveform">
+        <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+      </div>
+    </section>
+
+    <section class="section-inner feature-showcase" id="video">
+      <div class="feature-copy">
+        <p class="section-kicker">Video</p>
+        <h2>Видео и Видео Уравнитель</h2>
+        <p>Добавляйте видеофрагменты, трейлеры и клипы. Видео Уравнитель помогает найти файлы с неоднозначным размером относительно длительности.</p>
+      </div>
+      <div class="feature-media video-frame">
+        <span>00:17</span>
+        <strong>Фрагмент вопроса</strong>
+      </div>
+    </section>
+
+    <section class="section-inner feature-showcase reverse" id="export">
+      <div class="feature-copy">
+        <p class="section-kicker">Export</p>
+        <h2>Экспорт в `.siq`</h2>
+        <p>Когда структура и медиа готовы, редактор собирает итоговый `.siq`-файл, который можно передать друзьям или открыть в совместимом приложении.</p>
+      </div>
+      <div class="feature-media export-card">
+        <strong>soteken_pack.siq</strong>
+        <span>Раунды · Темы · Медиа · Ответы</span>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>SotekenGamePack</span>
+    <div class="footer-links">
+      <a href="../">Обзор</a>
+      <a href="../roadmap/">Roadmap</a>
+      <a href="../help/">Помощь</a>
+    </div>
+  </footer>
+</body>
+</html>
